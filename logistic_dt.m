@@ -1,8 +1,9 @@
 f = @(u,t) 0.1*(1-u/500)*u;
 U_0 = 100;
-[u_old, t_old] = ode_FE(f, U_0, dt, T);
-dt = 20; T = 100;
+dt = 20;
+T = 100;
 k = 1;
+[u_old, t_old] = ode_FE(f, U_0, dt, T);
 
 answer = 'y';
 while answer == 'y'
